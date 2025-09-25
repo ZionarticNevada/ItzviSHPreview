@@ -9,3 +9,26 @@
   font-weight: 200;
   font-style: normal;
 }
+
+.resaltada {
+  animation: resaltar 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+@keyframes resaltar {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(217, 106, 158, 0.4);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(217, 106, 158, 0.6);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(217, 106, 158, 0.4);
+  }
+}
+
+
